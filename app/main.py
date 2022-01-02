@@ -305,5 +305,5 @@ def data():
         #return render_template('result.html',form_data = form_data)
     
         
-          
-app.run(debug=True)
+if __name__ == "main":          
+    app.run(debug=True)
