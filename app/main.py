@@ -209,8 +209,9 @@ def data():
             p = 1
         
             for a in jmeno_adresa:
-                time.sleep(1)
+                
                 if p % 2 == 0:
+                    time.sleep(1)
                     try:
                         m = get_vzdalenost_new(a, adresa_uzivatele)
                         vzdalenosti.append(m)
