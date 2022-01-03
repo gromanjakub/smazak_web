@@ -278,15 +278,15 @@ def data():
                     seznam_nejblizsich_restauraci.append(
                         vzdalenosti[pozice_nejmensiho])
                 else:
-                    
-                    return( "Vámi hledané jídlo se nachází jen v těchto dvou restauracích.")
+                    return render_template('result.html', hledane_jidlo=hledane_jidlo, restaurace1 = restaurace1, vzdalenost1 = vzdalenost1
+                    ,restaurace2 = restaurace2, vzdalenost2 = vzdalenost2)
+                    #return( "Vámi hledané jídlo se nachází jen v těchto dvou restauracích.")
     
             else:
-                
-                return("Vámi hledané jídlo se nacházi jen v této restauraci.")
+                return render_template('result.html', hledane_jidlo=hledane_jidlo, restaurace1 = restaurace1, vzdalenost1 = vzdalenost1)
+                #return("Vámi hledané jídlo se nacházi jen v této restauraci.")
         else:
-            return(
-                "Lituji, ale v daném městě / městské části není dnes v menu vámi hledané jídlo.")
+            return("Lituji, ale v daném městě / městské části není dnes v menu vámi hledané jídlo.")
             #return render_template('result.html',form_data = form_data)
         #def plpl():
         #    a = 2
@@ -299,7 +299,7 @@ def data():
         #return  '{} {}'.format(restaurace1, vzdalenost1)
         return render_template('result.html', hledane_jidlo=hledane_jidlo, restaurace1 = restaurace1, vzdalenost1 = vzdalenost1
         ,restaurace2 = restaurace2, vzdalenost2 = vzdalenost2, restaurace3 = restaurace3, vzdalenost3 = vzdalenost3)
-        return("plpl")
+        
         #return render_template('result.html',form_data = form_data)
     
         
