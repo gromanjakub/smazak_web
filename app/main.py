@@ -190,10 +190,7 @@ def data():
                     jmeno_adresa.append(adresa)
                 i = i+1
         
-            for a in jmeno_adresa:
-                if "Roháčova, 24" in a:
-                    a.replace("Roháčova, 24", "Roháčova, 268/24")
-            return jmeno_adresa
+           
         
         
         get_jmeno_adresa(spinave_jmeno_adresa)
@@ -211,7 +208,7 @@ def data():
             for a in jmeno_adresa:
                 
                 if p % 2 == 0:
-                    time.sleep(1)
+                    time.sleep(0.5)
                     try:
                         m = get_vzdalenost_new(a, adresa_uzivatele)
                         vzdalenosti.append(m)
