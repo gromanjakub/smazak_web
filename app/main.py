@@ -280,11 +280,11 @@ def data():
                     seznam_nejblizsich_restauraci.append(
                         vzdalenosti[pozice_nejmensiho])
                 else:
-                    return("mgmgmg")
+                    
                     return( "Vámi hledané jídlo se nachází jen v těchto dvou restauracích.")
     
             else:
-                return("oiengwoig")
+                
                 return("Vámi hledané jídlo se nacházi jen v této restauraci.")
         else:
             return(
